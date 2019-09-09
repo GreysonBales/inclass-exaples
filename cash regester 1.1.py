@@ -23,12 +23,11 @@ tax_amount = taxes * sub_total
 total_price = tax_amount + sub_total
 
 
-#printing all the receipts
+#printing the receipt
 
 
 print("SALES RECEIPT")
 print(" ")
-
 print("Number of items  " + str(num_items))
 print(" ")
 print("Item cost        " + "$" + str(cost_per_item))
@@ -42,17 +41,3 @@ print(" ")
 print(" ")
 print("Total sales      $" + str(total_price))
 
-
-
-
-
-
-
-
-#refrence points
-#SALES RECEIPT
-#Number of items : 5
-#Cost per item   : $5.5
-#Tax rate        : 0.06
-#Tax amount      : $1.65
-#TOTAL SALE PRICE: $29.15
