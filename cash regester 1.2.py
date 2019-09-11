@@ -41,3 +41,4 @@ print("______________________")
 print(" ")
 print("Total sales      " , total_price , sep=sep1)
 
+input()
