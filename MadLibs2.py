@@ -37,7 +37,7 @@ word1 , word2 , word3 , word4 , word5 , word6 , word7 ,
 word8 , word9 , word10 , word11 , word12 , word13 , word14)
 
 print (text)
-
+input()
 #your variable word11 ahd a space between word and 11 
 
 
