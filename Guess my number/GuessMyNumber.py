@@ -104,7 +104,7 @@ _______________________
 
 #has the computer play the game
 def computer_guess_number():
-    print("computer")
+    
 
 
 
@@ -128,6 +128,69 @@ def computer_guess_number():
 
 
 number_game_menu()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

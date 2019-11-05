@@ -1,8 +1,10 @@
 #Bales, Greyson
 #Guess my number function
 #10/2019
-
 # Gets a number, is actually a number, and in the range, then returns number
+
+import random
+
 def get_num_in_range(rmin,rmax):
     while True:
         num = input("pick a number between "+str(rmin)+" and "+str(rmax)+"\n")
