@@ -2,13 +2,15 @@
 #computer variables coming in as strings
 cmin = input("min")
 cmax = input("max")
-ctries = input("tries")
 cnumber = input("number")
 #changing to ints
 cmin = int(cmin)
 cmax = int(cmax)
-ctries = int(ctries)
 cnumber = int(cnumber)
+#the constant var
+tries = 0 
+
+
 #computer guessing
 
 while True:

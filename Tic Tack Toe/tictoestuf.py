@@ -6,6 +6,7 @@
 X = "X"
 O = "O"
 EMPTY = " "
+TIE ="TIE"
 NUM_SQUARES = 9
 
 
@@ -74,14 +75,16 @@ def ask_number(question, low, high):
 
 
 #assign peice is working
-def assign_peice():
+def assign_piece():
     go_first = ask_yes_no("Would you like to go first?\n")
     if go_first == "y":
         player = X
         comp = O
+        print("you are x's and the computer is o's")
     elif go_first == "n":
         comp = X    
         player = O
+        print("you are o's and the computer is x's")
     return comp,player
 
 
@@ -103,22 +106,16 @@ def legal_moves(board):
     return moves
 
 
-#not working
+#should be working
 def player_turn(board,player):
     lm = legal_moves(board)
     move = None
     while move not in lm:
-        ask_number("pick a number between 1-9", 1, 10)-1
+        move = ask_number("pick a number between 1-9: ", 1, 10)-1
         if move not in lm:
             print("you imbecile, you can't choose that!")
+    print("Fine...")
     return move
-
-
-##board = new_board()
-##player = X
-##move = player_turn(board, player)
-##
-##print(move)
 
 
 
@@ -132,7 +129,7 @@ def winner(board):
                    (1,4,7),
                    (2,5,8),
                    (0,4,8),
-                   (2,4,8))
+                   (2,4,6))
     for row in WAYS_TO_WIN:
         if board[row[0]] == board[row[1]] == board[row[2]] != EMPTY:
             winner = board[row[0]]
@@ -145,33 +142,84 @@ def winner(board):
 
 
 
-
-def computer_turn(comp, player, board):
+#broabents
+def comp_turn(board,comp,player):
     copy_board = board[:]
-    BEST_MOVES = (5,1,3,7,9,2,4,6,8)
-    print("I shall take square number", end = " ")
+
+    BEST_MOVES = (4, 0, 2, 6, 8, 1, 3, 5, 7)
+    
+    print("I shall take square number", end=" ")
 
     for move in legal_moves(board):
-        copy_board[move] == comp
+        copy_board[move] = comp
         if winner(copy_board) == comp:
             print(move)
             return move
-
+        copy_board[move] = EMPTY
+        
     for move in legal_moves(board):
         copy_board[move] = player
         if winner(copy_board) == player:
             print(move)
             return move
+        copy_board[move] = EMPTY
+
+    for move in BEST_MOVES:
+        if move in legal_moves(board):
+            print(move)
+            return move
+#mine
+##def comp_turn(board, comp, player):
+##    copy_board = board[:]
+##    BEST_MOVES = (5,1,3,7,9,2,4,6,8)
+##    print("I shall take square number", end = " ")
+##
+##    for move in legal_moves(board):
+##        copy_board[move] == comp
+##        if winner(copy_board) == comp:
+##            print(move)
+##            return move
+##
+##    for move in legal_moves(board):
+##        copy_board[move] = player
+##        print("test")
+##        if winner(copy_board) == player:
+##            print(move)
+##            return move
+##
+##    for move in BEST_MOVES:
+##        if move in legal_moves(board):
+##            print(move)
+##            return move
+        
+
+def tictacgame():
+    turn = X
+    intro()
+    board = new_board()
+    display_board(board)
+    comp , player  = assign_piece()
+    while not winner(board):
+        if turn == player:
+            move = player_turn(board,player)
+            board[move] = player
+        else:
+            move = comp_turn(board,comp,player)
+            board[move] = comp
+        display_board(board)
+        turn = switch_turn(turn)
+    winer = winner(board)
+    if winer == comp:
+        print("you suck the computer beat you")
+    elif winer == TIE:
+        print("you suck, the computer basically beat you")
+    elif winer == player:
+        print("some how your idiotic self won.")
+
+        
 
 
 
-board = new_board()
-board[0] = X
-board[1] = X
-x=computer_turn(board,O,X)
-print(x)
-board[x] = O
-display_board(board)
 
 
 
@@ -179,19 +227,23 @@ display_board(board)
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+tictacgame()
+##board= new_board()
+##board[0] = X
+##board[1] = EMPTY
+##board[2] = X
+##board[3] = X
+##board[4] = X
+##board[5] = O
+##board[6] = O
+##board[7] = EMPTY
+##board[8] = O
+##display_board(board)
+##win = winner(board)
+##print(win)
+##move = comp_turn(board,X,O)
+##board[move] = X
+##display_board(board)
 
 
 
