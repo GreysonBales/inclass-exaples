@@ -1,0 +1,60 @@
+This is the midterm by Bales,Greyson.
+Creator
+1.Who created the language python?
+Guido van Rossom
+Monty Python
+Bryan
+James Gosling
+1
+Guido Van Rossom made python as a side project during winter break.
+Creator
+2.Who updates Python
+Python Software Foundation
+Bryan
+Django
+Rachel
+1
+The PSF keeps track of everything happeing in python.
+Creator
+3.When was python Created?
+1980's
+1990's
+1970's
+Bryan
+1
+In the 1980's Python was made for fun.
+Basics
+4.How do you display "Hello World"
+print("Hello World")
+print("hello world")
+print(hello world)
+Bryan
+1
+Printing requires quatation marks and capitalization in the correct places.
+Basics
+5.How do you create loops?
+for i in range()
+loop()
+bryan
+repeat
+1
+This loop repeats as many times as you have in the parenthesis on range()
+Basics
+6.What are some comparative operators?
+< >
+Bryan
++ -
+( )
+1
+Greater than or less than are the most common comparisons.
+Basics
+7.How do you open the git hub menu?
+Git bash
+Git Bryan
+Git push
+Git commit
+1
+Git bash opens the command prompt to open the git hub menu.
+
+
+

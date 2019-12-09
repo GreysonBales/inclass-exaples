@@ -1,7 +1,7 @@
 #Bianary search
 #bales, greyson
 #11/2019
-num = 3
+num = 8
 low = 1
 high = 11
 
@@ -11,7 +11,8 @@ def comp_guess(low,high):
     for i in range(low,high+1):
         num_list.append(i)
     choice = len(num_list)//2
-    return choice
+    
+    return choice+1
 
 
 
