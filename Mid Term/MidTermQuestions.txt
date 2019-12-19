@@ -1,0 +1,201 @@
+Midterm Exam - Benjamin Vielstich
+Trivia
+Who created Python
+Bill Gates
+Ken Thompson
+Guido van Rossum
+Mark Zuckerberg
+3
+Guido van Rossum created Python in 1889
+syntax
+How would you display Hello World!
+print(Hello World!)
+system.out.println("Hello World!");
+display Hello World!
+print("Hello World!")
+4
+print("Hello World!") is the correct way to display Hello World!
+syntax
+How many times will this loop ? While True:\n\tprint("help")
+1 time
+infinitely
+10 times
+13 times
+2
+While True: will loop until it doesn't return true anymore
+syntax
+which of these is an invalid variable name
+test1
+test 1
+test1_
+Test1
+2
+variables cannot have spaces
+syntax
+what order does python execute code
+top to bottom
+botton to top
+right to left
+left to right
+1
+python executes code from top to bottom
+syntax
+which of these is a valid comment
+!this is a comment
+*this is a comment
+#this is a comment
+%this is a comment
+3
+the # is used for commenting in python
+syntax
+what data value would hold 67?
+string
+float
+boolean
+integer
+4
+integers hold whole numeric values
+syntax
+which of these will assign the value "pizza" to the variable "food"
+food - "pizza"
+food = "pizza"
+food = pizza
+food - pizza
+2
+a equals sign and quotes is the correct way to set a variable to a string
+syntax
+which will be a float
+3
+3.0
+True
+"Three"
+2
+a float is distinct from an integer with a decimal
+syntax
+which will ask the user for their favorite food
+food = input(what is your favorite food)
+food = print("what is your favorite food)
+food = input("what is your favoite food)
+food = print(what is your favorite food)
+3
+an input statement follows the same rules as a print statement
+syntax
+which of the following means greater than or equal to
+>=
+<
+>
+!=
+1
+>= means greater than or equal to
+syntax
+what should be put after every if statement
+:
+{
+;
+(
+1
+a colon should be at the end of every if statement
+syntax
+which expression will return True if either expression is True
+and
+not
+==
+or
+4
+or will return true if either expression is true
+syntax
+what will be printed form the code  print("I"+"like"+"Pie")
+I like Pie
+IlikePie
+I_like_pie
+Pie
+2
+concatinating doesn't add spaces
+syntax
+which is not a valid integer
+6
+-6
+"6"
+45378
+3
+a integer cannot have quotations
+syntax
+what datatype does the input function return
+it depends on what the user puts
+string
+boolean
+integer
+2
+the input function will always return a string
+syntax
+when you concatinate strings with a comma what happens
+each string will be printed on different lines
+they will be printed with no spaces inbetween
+they will be printed with spaces inbetween
+they will printed randomly
+3
+concatination with a comma will always have a space inbetween strings
+syntax
+what is the result of the following expression
+84 < 64
+true
+20
+false
+0
+3
+84 is not less than 64
+what are the possible values of a boolean
+true and false
+any numeric value
+yes and no
+anything surrounded in quotations
+1
+a boolean will only return True of False
+syntax
+what is the difference between = and ==
+they mean the same thing
+== is used in logical expressions and = is used in assignment statements
+they are interchangable
+== isn't used
+2
+== and = both have distinct uses
+syntax
+which will combine the values "cheese" and "burger" to the variable cheeseburger
+cheeseburger = "cheese" + "burger"
+cheeseburger = cheese + "burger"
+cheeseburger = "cheese" + burger
+cheeseburger = cheees + burger
+1
+both strings need to have quotations
+syntax 
+how long will an input() function wait for input
+10 seconds
+1 minute
+forever
+however long specified
+3
+the input statement will wait for the user forever
+fun questions
+which minecraft block can be referred to as the "Green Top"
+stone
+soul sand
+bedrock
+grass
+4
+grass has a green top
+fun questions
+where can you find the blaze mob in minecraft
+the overworld
+the nether
+underground
+the end
+2
+you find blazes in the nether
+fun quesetions
+what is the final boss of minecraft
+the ender dragon
+the wither
+creeper
+zombie
+1
+the ender dragon is the final boss of minecraft

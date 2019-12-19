@@ -1,0 +1,100 @@
+This is the midterm by Bales,Greyson.
+Creator
+1.Who created the language python?
+Guido van Rossom
+Monty Python
+Bryan
+James Gosling
+1
+Guido Van Rossom made python as a side project during winter break.
+Creator
+2.Who updates Python
+Python Software Foundation
+Bryan
+Django
+Rachel
+1
+The PSF keeps track of everything happeing in python.
+Creator
+3.When was python Created?
+1980's
+1990's
+1970's
+Bryan
+1
+In the 1980's Python was made for fun.
+Basics
+4.How do you display "Hello World"
+print("Hello World")
+print("hello world")
+print(hello world)
+Bryan
+1
+Printing requires quatation marks and capitalization in the correct places.
+Basics
+5.How do you create loops?
+for i in range()
+loop()
+bryan
+repeat
+1
+This loop repeats as many times as you have in the parenthesis on range()
+Basics
+6.What are some comparative operators?
+< >
+Bryan
++ -
+( )
+1
+Greater than or less than are the most common comparisons.
+Basics
+7.How do you open the git hub menu?
+Git bash
+Git Bryan
+Git push
+Git commit
+1
+Git bash opens the command prompt to open the git hub menu.
+Basics
+8.How do you import things into python
+import ...
+inport ...
+input ...
+bryan ...
+1
+Using the import function you can pull files from anywhere on the computer.
+Basics
+9. Where's the error? / name = Bob / age = 27 / hair_color = yellow / print(your name is "name" and you are "age" years old, head is "hair_color")
+line 4
+line 2
+line 3
+bryan
+1
+It should have quotations around everything excecpt the variables.
+Random Question!!!
+10. Who's the biggest meme?
+BRYAN!
+Salt bay
+Pewdepie
+giorno
+1
+Bryan is the biggest meme ever
+Basics
+11. What is this type of formating? number_of_questions
+Undescore
+CamelCase
+Elephant case
+lowercase
+1
+Underscore_variable_naming_is_the_only_acceptable_way_of_naming_them
+Basics
+What is python named after?
+Monty Python
+Bryan
+Giorno
+Mr.Broadbent
+
+
+
+
+

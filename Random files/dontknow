@@ -1,0 +1,8 @@
+# Bales, Greyson
+# 9/3/19
+# ?
+
+my_value = 2+3-7//5*(4-5*3)
+my_type = type(my_value)
+print(my_type)
+print(my_value)
