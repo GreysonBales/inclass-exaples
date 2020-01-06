@@ -17,6 +17,7 @@ p = puzzle
 
 
 #words for the puzzle and questions to go with those words, in order together.
+
 words = [ "PYTHON",
         "IMPORT",
         "PRINT",
@@ -26,7 +27,7 @@ words = [ "PYTHON",
         "FORSTATEMENT",
         "APPEND",
         "FILE",
-        "RANDINT",
+        "RANDINT",#67,68,69,70,71,72,73
         "BINARY",
         "COPY",
         "CONCATENATION",
@@ -59,9 +60,6 @@ questions = [ "What language do we use to create this program.",
             "What data type has only two possible values, True or False.",
             "A lot of people put there music on _______.",
             "The biggest meme of the class python period 4-5."] 
-
-
-
 
 
 
@@ -118,14 +116,14 @@ p[138],p[139],p[140],p[141],p[142],p[143],p[144],p[145],p[146],p[147],p[148],p[1
 p[158],p[159],p[160],p[161],p[162],p[163],p[164],p[165],p[166],p[167],p[168],p[169],p[170],p[171],p[172],p[173],p[174],p[175],p[176],p[177],
 p[178],p[179],p[180],p[181],p[182],p[183],p[184],p[185],p[186],p[187],p[188],p[189],p[190],p[191],p[192],p[193],p[194],p[195],p[196],p[197],
 p[198],p[199],p[200],p[201],p[202],p[203],p[204],p[205],p[206],p[207],p[208],p[209],p[210],p[211],p[212],p[213],p[214],p[215],p[216],p[217],
-p[218],p[219],p[220],p[221],p[222],p[223],p[224],p[225])
+p[218],p[219],p[220],p[221],p[222],p[223],p[224])
     print(grid)
 
 
 #getting a question and adding it to an already picked list
-def Q_and_A(words,questions):
+def Q_and_A(words,questions,picked):
     import random
-    picked=[]
+    
     while True: #making sure the word isnt already on the list of chosen words
         pick=random.randint(0,len(words)-1)
         if pick not in picked:
@@ -139,16 +137,16 @@ def Q_and_A(words,questions):
 # p taken out of word math 2 from very begging
 def word_math2(a,puzzle):
     nums = []#blank list to keep track of numbers
-    print("so get the correct index pos,\ntake the vertical number times 15 and add the horizontal")#how to get index pos.
+    print("***To get the word, take your vertical number multiply by 15, and then add horizontal.***")#how to get index pos.
    
     for i in a:#loops for how many letters are in the word
-        guess = input("what number would you like to choose your word is "+str(len(a))+" letters long\n that's how many imputs you will have")#asks for the letter pos in the index
+        guess = input("\n\nWhat number would you like to choose your word is "+str(len(a))+" total letters long\n that's how many imputs you will have")#asks for the letter pos in the index
         if guess.isdigit():
             
-            print("good choice, please choose another \n\n")#is it a digit, if so nice choice
+            print("Good choice, please choose another \n")#is it a digit, if so nice choice
             nums.append(int(guess))
         else:
-            print("bad choice, please choose a different number\n\n")#it's not a digit choose again
+            print("Bad choice, please choose a different number\n")#it's not a digit choose again
     if nums[0]+1 == nums[1] or nums[0]+15==nums[1] or nums[0]-15==nums[1] or nums[0]+16==nums[1] or nums[0]-16==nums[1]:
 #making sure the number is within the correct number of spaces, if not it will break
         word = ""
@@ -161,7 +159,37 @@ def word_math2(a,puzzle):
 
 
 
-    
+
+
+def main_wordsearch(words):
+    picked=[]
+    score = 0
+    word_list = len(words)
+    while words:
+        display_puzzle5(p)
+        q,a = Q_and_A(words,questions,picked)
+        print(q,"\n\n\n")
+        word = word_math2(a,puzzle)
+        if word == a:
+            print("good job")
+            print("next question")
+            score += 1
+        else:
+            print("You got the questions wrong. You've failed.")
+            break
+        if score == word_list:
+            break
+    print("You scored", score ,"out of 20")
+    print("Way to go")
+
+
+
+
+
+
+
+
+main_wordsearch(words)
 
 
 
@@ -170,26 +198,20 @@ def word_math2(a,puzzle):
 ##print(q)
 ##word = word_math2(a,puzzle)
 ##print(word)
+##
 
 
 
-def main(p,words,questions,a,puzzle):
 
-    score = 0
-    while True in range(1,20):
-        display_puzzle5(p)
-        q,a = Q_and_A(words, questions)
-        print(q)
-        print("\n\n\n")
-        word = word_math2(a,puzzle)
-        if word == a:
-            print("\n\n\n Good job you scored a point, continue to play!")
-            score +=1
-        else:
-            print("\n\n\n Nice, you done failed. Here's your score card.")
-            break
-        print("Way to play the word search!")
-        print("you scored \n\n\n\n " , score,"\n\n\n\ Way to go!"
+
+
+
+
+#looped
+ #puzzle
+ #question
+ #somewhere to put answer
+        #win condition
 
 
 
@@ -211,7 +233,24 @@ def main(p,words,questions,a,puzzle):
 
 
 
-main(p,words,questions,a,puzzle)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
