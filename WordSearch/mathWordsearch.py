@@ -8,6 +8,7 @@ import random
 
 
 
+
 #the puzzle
 puzzle="DKOWZFLOWCHARTQINZYYVXMPCBMOBBPFCCSHWYJGOOGLEXSSOJTALFKKWKOFYZUTNAIRANDINTIYCGCACOXYXHGKSLPFORSTATEMENTWEAIQBRIETAPPENDERNVIAMPMEMYXPWSATINNPRCENNTEVTMEDADOICONARHEREGERORNXVPTTEOITENYMTTXJBYYISNERBOOLEANFFHCOGRBRYANSHUFFLEBN&rlz=1C1GCEA_enUS863US863&oq=DKOWZFLOWCHARTQINZYYVXMPCBMOBBPFCCSHWYJGOOGLEXSSOJTALFKKWKOFYZUTNAIRANDINTIYCGCACOXYXHGKSLPFORSTATEMENTWEAIQBRIETAPPENDERNVIAMPMEMYXPWSATINNPRCENNTEVTMEDADOICONARHEREGERORNXVPTTEOITENYMTTXJBYYISNERBOOLEANFFHCOGRBRYANSHUFFLEBN"
 p = puzzle
@@ -192,98 +193,3 @@ def main_wordsearch(words):
 main_wordsearch(words)
 
 
-
-##display_puzzle5(p)
-##q,a = Q_and_A(words,questions)
-##print(q)
-##word = word_math2(a,puzzle)
-##print(word)
-##
-
-
-
-
-
-
-
-
-#looped
- #puzzle
- #question
- #somewhere to put answer
-        #win condition
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
