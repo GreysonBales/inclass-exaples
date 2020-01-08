@@ -1,0 +1,2 @@
+start up the program and it will just start conting to one million
+once it reaches that number the code breaks.

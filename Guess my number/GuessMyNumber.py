@@ -48,7 +48,6 @@ _____________________
     1.Play game
     2.Option menu
     3.Quit
-    4.Computer
     """)
     
         input_ = input("pick an option \n")
@@ -103,8 +102,7 @@ _______________________
 
 
 #has the computer play the game
-def computer_guess_number():
-    
+
 
 
 

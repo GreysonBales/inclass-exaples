@@ -1,0 +1,5 @@
+play tic tac toe against the computer!
+the compter should win every time or tie you(same as it winning)
+
+
+Good luck instructions are posted as you play the game

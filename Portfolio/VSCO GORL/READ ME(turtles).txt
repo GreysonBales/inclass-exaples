@@ -1,0 +1,4 @@
+i had some fun programing with turtles.
+Making a house was difficult and not worth it.
+But when ran the turtle creates a little house that it can sit on.
+After that though, everything exits out.
